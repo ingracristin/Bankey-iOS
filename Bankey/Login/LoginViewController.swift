@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol LoginVieControllerDelegate: AnyObject {
+protocol LoginViewControllerDelegate: AnyObject {
     func didLogin()
 }
 
@@ -20,7 +20,7 @@ class LoginViewController: UIViewController {
     let signInButton = UIButton(type: .system)
     let errorMessageLabel = UILabel()
     
-    weak var delegate: LoginVieControllerDelegate?
+    weak var delegate: LoginViewControllerDelegate?
     
     var username: String? {
         return loginView.usernameTextField.text

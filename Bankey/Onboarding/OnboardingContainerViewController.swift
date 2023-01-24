@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-protocol OnBoardingContainerViewControllerDelegate: AnyObject {
+protocol OnboardingContainerViewControllerDelegate: AnyObject {
     func didFinishOnboarding()
 }
 
@@ -19,7 +19,7 @@ class OnboardingContainerViewController: UIViewController {
     var currentVC: UIViewController  //controlador de exibicao atual
     let closeButton = UIButton(type: .system)
     
-    weak var delegate: OnBoardingContainerViewControllerDelegate?
+    weak var delegate: OnboardingContainerViewControllerDelegate?
     
     
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -85,7 +85,8 @@ class OnboardingContainerViewController: UIViewController {
     private func layout() {
         // Close
         NSLayoutConstraint.activate([
-            closeButton.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 2),
+            closeButton.trailingAnchor.constraint(equalToSystemSpacingAfter: view.trailingAnchor, multiplier: 2),
+            closeButton.leadingAnchor.constraint(equalToSystemSpacingAfter: view.leadingAnchor, multiplier: 35),
             closeButton.topAnchor.constraint(equalToSystemSpacingBelow: view.safeAreaLayoutGuide.topAnchor, multiplier: 2)
         ])
     }
@@ -150,6 +151,11 @@ extension OnboardingContainerViewController {
     @objc func closeTapped(_ sender: UIButton) {
         delegate?.didFinishOnboarding()
     }
+        
+    @objc func doneTapped(_ sender: UIButton) {
+        delegate?.didFinishOnboarding()
+    }
+
 }
 
 

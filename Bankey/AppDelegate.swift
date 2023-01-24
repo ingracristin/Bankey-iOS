@@ -12,7 +12,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     let loginViewController = LoginViewController()
-    let onBoardingContainerViewController = OnboardingContainerViewController()
+    let onboardingContainerViewController = OnboardingContainerViewController()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
@@ -22,27 +22,43 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
  //       window?.rootViewController = LoginViewController()
         
         loginViewController.delegate = self
-       // window?.rootViewController = loginViewController
+        window?.rootViewController = loginViewController
        // window?.rootViewController = OnboardingViewController(heroImageName: "pucca1", titleText: "Welcome")
         
         //onboarding
         
-        onBoardingContainerViewController.delegate = self
-        window?.rootViewController = onBoardingContainerViewController
+        onboardingContainerViewController.delegate = self
+        //window?.rootViewController = onBoardingContainerViewController
         return true
     }
 }
 
-extension AppDelegate: LoginVieControllerDelegate {
+extension AppDelegate: LoginViewControllerDelegate {
     func didLogin() {
-        print("Conseguimos!")
+        setRootViewController(onboardingContainerViewController)
     }
 }
 
-extension AppDelegate: OnBoardingContainerViewControllerDelegate {
+extension AppDelegate: OnboardingContainerViewControllerDelegate {
     func didFinishOnboarding() {
         print("Onboarding Finalizado")
     }
-    
-    
+}
+
+extension AppDelegate {
+    func setRootViewController(_ vc: UIViewController, animated: Bool = true) {
+        guard animated, let window = self.window else {
+            self.window?.rootViewController = vc
+            self.window?.makeKeyAndVisible()
+            return
+        }
+
+        window.rootViewController = vc
+        window.makeKeyAndVisible()
+        UIView.transition(with: window,
+                          duration: 0.3,
+                          options: .transitionCrossDissolve,
+                          animations: nil,
+                          completion: nil)
+    }
 }
