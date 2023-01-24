@@ -25,7 +25,10 @@ class LoginView: UIView {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been iamplemented")
     }
+    
 }
+
+
 
 extension LoginView {
     
