@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EF0EBECE2980865D00018F28 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0EBECD2980865D00018F28 /* DummyViewController.swift */; };
+		EF0EBED12981AEEB00018F28 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0EBED02981AEEB00018F28 /* LocalState.swift */; };
 		EF124D51297202F800110CD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF124D50297202F800110CD9 /* AppDelegate.swift */; };
 		EF124D55297202F800110CD9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF124D54297202F800110CD9 /* LoginViewController.swift */; };
 		EF124D5A297202FA00110CD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF124D59297202FA00110CD9 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		EF0EBECD2980865D00018F28 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
+		EF0EBED02981AEEB00018F28 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		EF124D4D297202F800110CD9 /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF124D50297202F800110CD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF124D54297202F800110CD9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -41,9 +43,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF0EBECF2981AEDE00018F28 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EF0EBED02981AEEB00018F28 /* LocalState.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		EF124D44297202F800110CD9 = {
 			isa = PBXGroup;
 			children = (
+				EF0EBECF2981AEDE00018F28 /* Utils */,
 				EF124D4F297202F800110CD9 /* Bankey */,
 				EF124D4E297202F800110CD9 /* Products */,
 			);
@@ -168,6 +179,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF124D6829720B4D00110CD9 /* LoginView.swift in Sources */,
+				EF0EBED12981AEEB00018F28 /* LocalState.swift in Sources */,
 				EF0EBECE2980865D00018F28 /* DummyViewController.swift in Sources */,
 				EF124D55297202F800110CD9 /* LoginViewController.swift in Sources */,
 				EF434933297D86B0003DD214 /* OnboardingViewController.swift in Sources */,
