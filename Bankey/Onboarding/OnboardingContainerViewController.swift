@@ -25,9 +25,9 @@ class OnboardingContainerViewController: UIViewController {
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         self.pageViewController = UIPageViewController(transitionStyle: .scroll, navigationOrientation: .horizontal, options: nil)
         
-        let page1 = OnboardingViewController(heroImageName: "pucca1", titleText: "Welcome")
-        let page2 = OnboardingViewController(heroImageName: "pucca2", titleText: "Hello!")
-        let page3 = OnboardingViewController(heroImageName: "pucca3", titleText: "Good see you!")
+        let page1 = OnboardingViewController(heroImageName: "delorean", titleText: "Welcome")
+        let page2 = OnboardingViewController(heroImageName: "thumbs", titleText: "Hello!")
+        let page3 = OnboardingViewController(heroImageName: "world", titleText: "Good see you!")
         
         
         pages.append(page1)

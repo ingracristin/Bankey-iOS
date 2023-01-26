@@ -11,6 +11,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
+    //var hasOnboarded = false
     
     let loginViewController = LoginViewController()
     let onboardingContainerViewController = OnboardingContainerViewController()
@@ -21,21 +22,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
         window?.backgroundColor = .systemBackground
- //       window?.rootViewController = LoginViewController()
-        
+
+        //login
         loginViewController.delegate = self
-        window?.rootViewController = loginViewController
-       // window?.rootViewController = OnboardingViewController(heroImageName: "pucca1", titleText: "Welcome")
-        
         //onboarding
-        
         onboardingContainerViewController.delegate = self
-        //window?.rootViewController = onBoardingContainerViewController
-        
-        
         //dummy
         dummyViewController.logoutDelegate = self
         
+        window?.rootViewController = loginViewController
         return true
         
     }
