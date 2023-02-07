@@ -17,15 +17,65 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="144"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bankey" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jf5-wK-gF2">
+                    <rect key="frame" x="16" y="16" width="79" height="30"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Good moring," textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bM9-z5-iIz">
+                    <rect key="frame" x="16" y="54" width="104" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L40-2F-Poc">
+                    <rect key="frame" x="16" y="83" width="39" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun.max.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="qKr-MS-nwM">
+                    <rect key="frame" x="298" y="15.5" width="100" height="100.5"/>
+                    <color key="tintColor" systemColor="systemYellowColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="TdL-0f-O15"/>
+                        <constraint firstAttribute="width" constant="100" id="vCh-Nb-dEG"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KWW-u1-D0d">
+                    <rect key="frame" x="16" y="112" width="30.5" height="17"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Jf5-wK-gF2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="6ms-80-Yg1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qKr-MS-nwM" secondAttribute="trailing" constant="16" id="Fe5-6z-hV0"/>
+                <constraint firstItem="qKr-MS-nwM" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="16" id="QW4-P7-GOf"/>
+                <constraint firstItem="bM9-z5-iIz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="Uqx-tA-hA2"/>
+                <constraint firstItem="KWW-u1-D0d" firstAttribute="top" secondItem="L40-2F-Poc" secondAttribute="bottom" constant="8" id="lgk-6T-bDH"/>
+                <constraint firstItem="L40-2F-Poc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="qqR-ok-egS"/>
+                <constraint firstItem="KWW-u1-D0d" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="sk6-Lg-rPd"/>
+                <constraint firstItem="bM9-z5-iIz" firstAttribute="top" secondItem="Jf5-wK-gF2" secondAttribute="bottom" constant="8" id="uew-t4-IUl"/>
+                <constraint firstItem="Jf5-wK-gF2" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="vY7-vn-KCt"/>
+                <constraint firstItem="L40-2F-Poc" firstAttribute="top" secondItem="bM9-z5-iIz" secondAttribute="bottom" constant="8" id="wH1-KR-7nG"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="132" y="116"/>
+            <point key="canvasLocation" x="131.8840579710145" y="115.84821428571428"/>
         </view>
     </objects>
     <resources>
+        <image name="sun.max.fill" catalog="system" width="128" height="124"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
