@@ -16,6 +16,7 @@
 		EF124D6829720B4D00110CD9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF124D6729720B4D00110CD9 /* LoginView.swift */; };
 		EF434931297B1A62003DD214 /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF434930297B1A62003DD214 /* OnboardingContainerViewController.swift */; };
 		EF434933297D86B0003DD214 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF434932297D86B0003DD214 /* OnboardingViewController.swift */; };
+		EF726D862993248B00196605 /* AccountSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF726D852993248B00196605 /* AccountSummaryCell.swift */; };
 		EFD65A0E2982F958001E5DA6 /* UiViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD65A0D2982F958001E5DA6 /* UiViewController+Utils.swift */; };
 		EFD65A102982FC8B001E5DA6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD65A0F2982FC8B001E5DA6 /* MainViewController.swift */; };
 		EFD695692984364100FB09EE /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD695682984364100FB09EE /* AccountSummaryViewController.swift */; };
@@ -35,6 +36,7 @@
 		EF124D6729720B4D00110CD9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		EF434930297B1A62003DD214 /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		EF434932297D86B0003DD214 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		EF726D852993248B00196605 /* AccountSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryCell.swift; sourceTree = "<group>"; };
 		EFD65A0D2982F958001E5DA6 /* UiViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiViewController+Utils.swift"; sourceTree = "<group>"; };
 		EFD65A0F2982FC8B001E5DA6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		EFD695682984364100FB09EE /* AccountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewController.swift; sourceTree = "<group>"; };
@@ -121,12 +123,29 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		EF726D832993243600196605 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				EFD6956A2984525B00FB09EE /* AccountSummaryHeaderView.swift */,
+				EFD6956C298452A500FB09EE /* AccountSummaryHeaderView.xib */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		EF726D842993245D00196605 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				EF726D852993248B00196605 /* AccountSummaryCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		EFD695672984359800FB09EE /* AccountSummary */ = {
 			isa = PBXGroup;
 			children = (
 				EFD695682984364100FB09EE /* AccountSummaryViewController.swift */,
-				EFD6956A2984525B00FB09EE /* AccountSummaryHeaderView.swift */,
-				EFD6956C298452A500FB09EE /* AccountSummaryHeaderView.xib */,
+				EF726D832993243600196605 /* Header */,
+				EF726D842993245D00196605 /* Cells */,
 			);
 			path = AccountSummary;
 			sourceTree = "<group>";
@@ -208,6 +227,7 @@
 				EFD6956B2984525B00FB09EE /* AccountSummaryHeaderView.swift in Sources */,
 				EF0EBECE2980865D00018F28 /* DummyViewController.swift in Sources */,
 				EF124D55297202F800110CD9 /* LoginViewController.swift in Sources */,
+				EF726D862993248B00196605 /* AccountSummaryCell.swift in Sources */,
 				EF434933297D86B0003DD214 /* OnboardingViewController.swift in Sources */,
 				EFD65A102982FC8B001E5DA6 /* MainViewController.swift in Sources */,
 				EFD695692984364100FB09EE /* AccountSummaryViewController.swift in Sources */,
