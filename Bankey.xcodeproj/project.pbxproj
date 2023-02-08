@@ -18,6 +18,9 @@
 		EF434933297D86B0003DD214 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF434932297D86B0003DD214 /* OnboardingViewController.swift */; };
 		EFD65A0E2982F958001E5DA6 /* UiViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD65A0D2982F958001E5DA6 /* UiViewController+Utils.swift */; };
 		EFD65A102982FC8B001E5DA6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD65A0F2982FC8B001E5DA6 /* MainViewController.swift */; };
+		EFD695692984364100FB09EE /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD695682984364100FB09EE /* AccountSummaryViewController.swift */; };
+		EFD6956B2984525B00FB09EE /* AccountSummaryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD6956A2984525B00FB09EE /* AccountSummaryHeaderView.swift */; };
+		EFD6956D298452A500FB09EE /* AccountSummaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFD6956C298452A500FB09EE /* AccountSummaryHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		EF434932297D86B0003DD214 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		EFD65A0D2982F958001E5DA6 /* UiViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiViewController+Utils.swift"; sourceTree = "<group>"; };
 		EFD65A0F2982FC8B001E5DA6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		EFD695682984364100FB09EE /* AccountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewController.swift; sourceTree = "<group>"; };
+		EFD6956A2984525B00FB09EE /* AccountSummaryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryHeaderView.swift; sourceTree = "<group>"; };
+		EFD6956C298452A500FB09EE /* AccountSummaryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountSummaryHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,11 +81,12 @@
 		EF124D4F297202F800110CD9 /* Bankey */ = {
 			isa = PBXGroup;
 			children = (
-				EF0EBECF2981AEDE00018F28 /* Utils */,
-				EF124D50297202F800110CD9 /* AppDelegate.swift */,
 				EFD65A0F2982FC8B001E5DA6 /* MainViewController.swift */,
+				EF124D50297202F800110CD9 /* AppDelegate.swift */,
 				EF124D6629720B1000110CD9 /* Login */,
 				EF43492F297B1A27003DD214 /* Onboarding */,
+				EFD695672984359800FB09EE /* AccountSummary */,
+				EF0EBECF2981AEDE00018F28 /* Utils */,
 				EF124D6529720A2C00110CD9 /* Files */,
 			);
 			path = Bankey;
@@ -112,6 +119,16 @@
 				EF434932297D86B0003DD214 /* OnboardingViewController.swift */,
 			);
 			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		EFD695672984359800FB09EE /* AccountSummary */ = {
+			isa = PBXGroup;
+			children = (
+				EFD695682984364100FB09EE /* AccountSummaryViewController.swift */,
+				EFD6956A2984525B00FB09EE /* AccountSummaryHeaderView.swift */,
+				EFD6956C298452A500FB09EE /* AccountSummaryHeaderView.xib */,
+			);
+			path = AccountSummary;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -172,6 +189,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFD6956D298452A500FB09EE /* AccountSummaryHeaderView.xib in Resources */,
 				EF124D5D297202FA00110CD9 /* LaunchScreen.storyboard in Resources */,
 				EF124D5A297202FA00110CD9 /* Assets.xcassets in Resources */,
 			);
@@ -187,10 +205,12 @@
 				EFD65A0E2982F958001E5DA6 /* UiViewController+Utils.swift in Sources */,
 				EF124D6829720B4D00110CD9 /* LoginView.swift in Sources */,
 				EF0EBED12981AEEB00018F28 /* LocalState.swift in Sources */,
+				EFD6956B2984525B00FB09EE /* AccountSummaryHeaderView.swift in Sources */,
 				EF0EBECE2980865D00018F28 /* DummyViewController.swift in Sources */,
 				EF124D55297202F800110CD9 /* LoginViewController.swift in Sources */,
 				EF434933297D86B0003DD214 /* OnboardingViewController.swift in Sources */,
 				EFD65A102982FC8B001E5DA6 /* MainViewController.swift in Sources */,
+				EFD695692984364100FB09EE /* AccountSummaryViewController.swift in Sources */,
 				EF124D51297202F800110CD9 /* AppDelegate.swift in Sources */,
 				EF434931297B1A62003DD214 /* OnboardingContainerViewController.swift in Sources */,
 			);

@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //dummy
         dummyViewController.logoutDelegate = self
         
-        window?.rootViewController = mainViewController
+        window?.rootViewController = AccountSummaryViewController()
         return true
         
     }
