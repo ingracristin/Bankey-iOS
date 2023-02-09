@@ -80,7 +80,9 @@ extension AccountSummaryCell {
         
         balanceAmountLabel.translatesAutoresizingMaskIntoConstraints = false
         balanceAmountLabel.textAlignment = .right
-        balanceAmountLabel.attributedText = makeFormattedBalance(dollars: "XXX,XXX", cents: "XX")
+        //.attributedText = makeFormattedBalance(dollars: "XXX,XXX", cents: "XX")
+        balanceAmountLabel.attributedText = makeFormattedBalance(dollars: "929,466", cents: "23")
+
         //balanceAmountLabel.text = "$929,466.63"
         
         chevronImageView.translatesAutoresizingMaskIntoConstraints = false
@@ -154,7 +156,7 @@ extension AccountSummaryCell {
     func configure(with vm: ViewModel){
         typeLabel.text = vm.accountType.rawValue
         nameLabel.text = vm.accountName
-        balanceAmountLabel.attributedText = vm.balanceAsAttributedString
+        //balanceAmountLabel.attributedText = vm.balanceAsAttributedString
         
         switch vm.accountType {
         case .Banking:
