@@ -17,6 +17,7 @@
 		EF27DF1729949834003F0289 /* CurrencyFormatterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF27DF1629949834003F0289 /* CurrencyFormatterTests.swift */; };
 		EF434931297B1A62003DD214 /* OnboardingContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF434930297B1A62003DD214 /* OnboardingContainerViewController.swift */; };
 		EF434933297D86B0003DD214 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF434932297D86B0003DD214 /* OnboardingViewController.swift */; };
+		EF664F68299ABC2000E5267F /* NSNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF664F67299ABC2000E5267F /* NSNotificationName.swift */; };
 		EF726D862993248B00196605 /* AccountSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF726D852993248B00196605 /* AccountSummaryCell.swift */; };
 		EFC39A472994481E00A2FEBA /* Decimal+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC39A462994481E00A2FEBA /* Decimal+Utils.swift */; };
 		EFC39A49299448AF00A2FEBA /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC39A48299448AF00A2FEBA /* CurrencyFormatter.swift */; };
@@ -51,6 +52,7 @@
 		EF27DF1629949834003F0289 /* CurrencyFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatterTests.swift; sourceTree = "<group>"; };
 		EF434930297B1A62003DD214 /* OnboardingContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContainerViewController.swift; sourceTree = "<group>"; };
 		EF434932297D86B0003DD214 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		EF664F67299ABC2000E5267F /* NSNotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationName.swift; sourceTree = "<group>"; };
 		EF726D852993248B00196605 /* AccountSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryCell.swift; sourceTree = "<group>"; };
 		EFC39A462994481E00A2FEBA /* Decimal+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decimal+Utils.swift"; sourceTree = "<group>"; };
 		EFC39A48299448AF00A2FEBA /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				EFD65A0D2982F958001E5DA6 /* UiViewController+Utils.swift */,
 				EFC39A462994481E00A2FEBA /* Decimal+Utils.swift */,
 				EFC39A48299448AF00A2FEBA /* CurrencyFormatter.swift */,
+				EF664F67299ABC2000E5267F /* NSNotificationName.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 				EF0EBECE2980865D00018F28 /* DummyViewController.swift in Sources */,
 				EFC39A49299448AF00A2FEBA /* CurrencyFormatter.swift in Sources */,
 				EFC39A472994481E00A2FEBA /* Decimal+Utils.swift in Sources */,
+				EF664F68299ABC2000E5267F /* NSNotificationName.swift in Sources */,
 				EF124D55297202F800110CD9 /* LoginViewController.swift in Sources */,
 				EF726D862993248B00196605 /* AccountSummaryCell.swift in Sources */,
 				EF434933297D86B0003DD214 /* OnboardingViewController.swift in Sources */,

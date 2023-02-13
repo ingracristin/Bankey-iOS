@@ -36,6 +36,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
+    //notifications
+    private func registerForNotifications() {
+        NotificationCenter.default.addObserver(self, selector: #selector(didLogout), name: .logout, object: nil)
+    }
+    
     private func displayLogin() {
         setRootViewController(loginViewController)
     }
@@ -80,18 +85,16 @@ extension AppDelegate: LoginViewControllerDelegate {
     }
 }
 
-extension AppDelegate: LogoutDelegate {
-    func didLogout() {
-        print("*********")
-        setRootViewController(loginViewController)
-    }
-}
-
 extension AppDelegate: OnboardingContainerViewControllerDelegate {
     func didFinishOnboarding() {
-        print("*********")
         LocalState.hasOnboarded = true
         prepMainView()
         setRootViewController(mainViewController)
+    }
+}
+
+extension AppDelegate: LogoutDelegate {
+    @objc func didLogout() {
+        setRootViewController(loginViewController)
     }
 }
