@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		EF0EBECE2980865D00018F28 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0EBECD2980865D00018F28 /* DummyViewController.swift */; };
 		EF0EBED12981AEEB00018F28 /* LocalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0EBED02981AEEB00018F28 /* LocalState.swift */; };
 		EF124D51297202F800110CD9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF124D50297202F800110CD9 /* AppDelegate.swift */; };
 		EF124D55297202F800110CD9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF124D54297202F800110CD9 /* LoginViewController.swift */; };
@@ -39,7 +38,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		EF0EBECD2980865D00018F28 /* DummyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
 		EF0EBED02981AEEB00018F28 /* LocalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalState.swift; sourceTree = "<group>"; };
 		EF124D4D297202F800110CD9 /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF124D50297202F800110CD9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 			children = (
 				EF124D54297202F800110CD9 /* LoginViewController.swift */,
 				EF124D6729720B4D00110CD9 /* LoginView.swift */,
-				EF0EBECD2980865D00018F28 /* DummyViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -295,7 +292,6 @@
 				EF124D6829720B4D00110CD9 /* LoginView.swift in Sources */,
 				EF0EBED12981AEEB00018F28 /* LocalState.swift in Sources */,
 				EFD6956B2984525B00FB09EE /* AccountSummaryHeaderView.swift in Sources */,
-				EF0EBECE2980865D00018F28 /* DummyViewController.swift in Sources */,
 				EFC39A49299448AF00A2FEBA /* CurrencyFormatter.swift in Sources */,
 				EFC39A472994481E00A2FEBA /* Decimal+Utils.swift in Sources */,
 				EF664F68299ABC2000E5267F /* NSNotificationName.swift in Sources */,

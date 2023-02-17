@@ -31,7 +31,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         onboardingContainerViewController.delegate = self
         
         
+        
         displayLogin()
+        registerForNotifications()
         
         return true
     }
@@ -95,6 +97,7 @@ extension AppDelegate: OnboardingContainerViewControllerDelegate {
 
 extension AppDelegate: LogoutDelegate {
     @objc func didLogout() {
+        print("aaaaaaa")
         setRootViewController(loginViewController)
     }
 }

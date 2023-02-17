@@ -22,6 +22,7 @@ class AccountSummaryViewController: UIViewController {
         super.viewDidLoad()
         setup()
         setupNavigationBar()
+        
     }
     
     func setupNavigationBar() {
