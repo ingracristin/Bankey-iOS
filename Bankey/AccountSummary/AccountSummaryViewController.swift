@@ -8,6 +8,13 @@
 import UIKit
 
 class AccountSummaryViewController: UIViewController {
+    //network
+    // Request Models
+    var profile: Profile?
+        
+    // View Models
+    var headerViewModel = AccountSummaryHeaderView.ViewModel(welcomeMessage: "Welcome", name: "", date: Date())
+    var accountCellViewModels: [AccountSummaryCell.ViewModel] = []
     
     
     var accounts: [AccountSummaryCell.ViewModel] = []
