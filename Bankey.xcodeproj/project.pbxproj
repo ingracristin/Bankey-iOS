@@ -27,8 +27,8 @@
 		EFD695692984364100FB09EE /* AccountSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD695682984364100FB09EE /* AccountSummaryViewController.swift */; };
 		EFD6956B2984525B00FB09EE /* AccountSummaryHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD6956A2984525B00FB09EE /* AccountSummaryHeaderView.swift */; };
 		EFD6956D298452A500FB09EE /* AccountSummaryHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFD6956C298452A500FB09EE /* AccountSummaryHeaderView.xib */; };
+		EFDBF01729EC517C0091E489 /* AccountSummaryViewController+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFDBF01629EC517C0091E489 /* AccountSummaryViewController+Networking.swift */; };
 		EFF4B7DC29D3A1E00003DBB1 /* Data+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4B7DB29D3A1E00003DBB1 /* Data+Utils.swift */; };
-		EFF4B7DE29D3A22A0003DBB1 /* AccountSummaryViewController+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF4B7DD29D3A22A0003DBB1 /* AccountSummaryViewController+Networking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +65,8 @@
 		EFD695682984364100FB09EE /* AccountSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryViewController.swift; sourceTree = "<group>"; };
 		EFD6956A2984525B00FB09EE /* AccountSummaryHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryHeaderView.swift; sourceTree = "<group>"; };
 		EFD6956C298452A500FB09EE /* AccountSummaryHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountSummaryHeaderView.xib; sourceTree = "<group>"; };
+		EFDBF01629EC517C0091E489 /* AccountSummaryViewController+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSummaryViewController+Networking.swift"; sourceTree = "<group>"; };
 		EFF4B7DB29D3A1E00003DBB1 /* Data+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Utils.swift"; sourceTree = "<group>"; };
-		EFF4B7DD29D3A22A0003DBB1 /* AccountSummaryViewController+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSummaryViewController+Networking.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,7 +97,6 @@
 				EF664F67299ABC2000E5267F /* NSNotificationName.swift */,
 				EF6BEEC4299FC68B002F848F /* UiTextField+SecureToggle.swift */,
 				EFF4B7DB29D3A1E00003DBB1 /* Data+Utils.swift */,
-				EFF4B7DD29D3A22A0003DBB1 /* AccountSummaryViewController+Networking.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -200,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				EFD695682984364100FB09EE /* AccountSummaryViewController.swift */,
+				EFDBF01629EC517C0091E489 /* AccountSummaryViewController+Networking.swift */,
 				EF726D832993243600196605 /* Header */,
 				EF726D842993245D00196605 /* Cells */,
 			);
@@ -315,7 +315,7 @@
 				EF3247C429CB782A00407FCF /* ShakeyBellView.swift in Sources */,
 				EFC39A49299448AF00A2FEBA /* CurrencyFormatter.swift in Sources */,
 				EFC39A472994481E00A2FEBA /* Decimal+Utils.swift in Sources */,
-				EFF4B7DE29D3A22A0003DBB1 /* AccountSummaryViewController+Networking.swift in Sources */,
+				EFDBF01729EC517C0091E489 /* AccountSummaryViewController+Networking.swift in Sources */,
 				EF664F68299ABC2000E5267F /* NSNotificationName.swift in Sources */,
 				EF124D55297202F800110CD9 /* LoginViewController.swift in Sources */,
 				EFF4B7DC29D3A1E00003DBB1 /* Data+Utils.swift in Sources */,
