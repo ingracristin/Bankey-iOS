@@ -20,6 +20,8 @@
 		EF664F68299ABC2000E5267F /* NSNotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF664F67299ABC2000E5267F /* NSNotificationName.swift */; };
 		EF6BEEC5299FC68B002F848F /* UiTextField+SecureToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF6BEEC4299FC68B002F848F /* UiTextField+SecureToggle.swift */; };
 		EF726D862993248B00196605 /* AccountSummaryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF726D852993248B00196605 /* AccountSummaryCell.swift */; };
+		EF9F15BE2A2A24C00066ABB7 /* ProfileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9F15BD2A2A24C00066ABB7 /* ProfileTests.swift */; };
+		EF9F15C02A2A26630066ABB7 /* AccountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9F15BF2A2A26630066ABB7 /* AccountTests.swift */; };
 		EFC39A472994481E00A2FEBA /* Decimal+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC39A462994481E00A2FEBA /* Decimal+Utils.swift */; };
 		EFC39A49299448AF00A2FEBA /* CurrencyFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFC39A48299448AF00A2FEBA /* CurrencyFormatter.swift */; };
 		EFD65A0E2982F958001E5DA6 /* UiViewController+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFD65A0D2982F958001E5DA6 /* UiViewController+Utils.swift */; };
@@ -58,6 +60,8 @@
 		EF664F67299ABC2000E5267F /* NSNotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSNotificationName.swift; sourceTree = "<group>"; };
 		EF6BEEC4299FC68B002F848F /* UiTextField+SecureToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiTextField+SecureToggle.swift"; sourceTree = "<group>"; };
 		EF726D852993248B00196605 /* AccountSummaryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSummaryCell.swift; sourceTree = "<group>"; };
+		EF9F15BD2A2A24C00066ABB7 /* ProfileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTests.swift; sourceTree = "<group>"; };
+		EF9F15BF2A2A26630066ABB7 /* AccountTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTests.swift; sourceTree = "<group>"; };
 		EFC39A462994481E00A2FEBA /* Decimal+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Decimal+Utils.swift"; sourceTree = "<group>"; };
 		EFC39A48299448AF00A2FEBA /* CurrencyFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFormatter.swift; sourceTree = "<group>"; };
 		EFD65A0D2982F958001E5DA6 /* UiViewController+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UiViewController+Utils.swift"; sourceTree = "<group>"; };
@@ -156,7 +160,8 @@
 		EF27DF0E29949818003F0289 /* BankeyUnitTests */ = {
 			isa = PBXGroup;
 			children = (
-				EF27DF1629949834003F0289 /* CurrencyFormatterTests.swift */,
+				EF9F15BC2A2A24A30066ABB7 /* AccountSummary */,
+				EF9F15BB2A2A24960066ABB7 /* Utils */,
 			);
 			path = BankeyUnitTests;
 			sourceTree = "<group>";
@@ -193,6 +198,23 @@
 				EF726D852993248B00196605 /* AccountSummaryCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		EF9F15BB2A2A24960066ABB7 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EF27DF1629949834003F0289 /* CurrencyFormatterTests.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EF9F15BC2A2A24A30066ABB7 /* AccountSummary */ = {
+			isa = PBXGroup;
+			children = (
+				EF9F15BD2A2A24C00066ABB7 /* ProfileTests.swift */,
+				EF9F15BF2A2A26630066ABB7 /* AccountTests.swift */,
+			);
+			path = AccountSummary;
 			sourceTree = "<group>";
 		};
 		EFD695672984359800FB09EE /* AccountSummary */ = {
@@ -334,6 +356,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF27DF1729949834003F0289 /* CurrencyFormatterTests.swift in Sources */,
+				EF9F15C02A2A26630066ABB7 /* AccountTests.swift in Sources */,
+				EF9F15BE2A2A24C00066ABB7 /* ProfileTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
